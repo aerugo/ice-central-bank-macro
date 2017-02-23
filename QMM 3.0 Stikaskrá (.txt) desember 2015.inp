@@ -1,0 +1,288 @@
+Dofile			
+//FORWARD
+
+/* Short-term interest rates (RS) */		
+A.RS	=	0.6	,
+B.RS	=	1.5	,
+C.RS	=	0.5	,
+
+/* Long-term interest rates (RL) */			
+A.RL	=	0.4153257258926131	,
+
+/* Real exchange rate (REX) FORWARD*/
+A.REX	=	0.65	,
+B.REX	=	0.3	,
+
+/* Broad money demand (M3) */	
+A.M3	=	0.079346	,
+Q1.M3	=	-0.009678	,
+Q2.M3	=	0.018331	,
+Q3.M3	=	0.012939	,
+D0723.M3 =	0.126104	,
+D084.M3 =	0.057831	,
+B.M3	=	0.425181	,
+C.M3	=	0.138231	,
+D.M3	=	-0.873400	,
+E.M3	=	-0.568741	,
+F.M3	=	-0.056755	,
+G.M3.LR	=	0.543814	,
+H.M3.LR	=	-13.22041	,
+I.M3.LR	=	-0.266775	,
+D08.M3.LR =	0.402342	,
+
+
+/* Private consumption (C) */
+A.C	=	0.022657	, 
+Q1.C	=	-0.042772	,
+Q2.C	=	0.038745	,
+Q3.C	=	-0.028193	,
+B.C	=	0.200656	,
+C.C	=	0.140549	,
+D.C	=	-0.982918	,
+E.C	=	-0.221873	,
+F.C.LR	=	0.966372	,
+G.C.LR	=	-0.974710	,
+D0824.C	=	-0.087767	,
+
+
+/* Business investment excluding the aluminium sector (IBREG) */	
+A.IBREG 	=	-0.4511672850204786	,
+D981.IBREG	=	0.2778750190962104	,
+D021.IBREG	=	-0.2859853697784258	,
+D084091.IBREG	=	-0.3044986034678556	,
+B.IBREG		=	0.1782368498281529	,
+C.IBREG		=	-0.0769241330530916	,
+Q1.IBREG	=	0.008522767230845585	,
+Q2.IBREG	=	0.005491209939579486	,
+Q3.IBREG	=	-0.02154139662572307	,
+	
+
+/* Private sector housing investment (IH) */		
+A.IH	=	-0.313285	,	
+Q1.IH	=	-0.143540	,
+Q2.IH	=	-0.035535	,
+Q3.IH	=	-0.018080	,
+D091.IH	=	-0.546199	,
+B.IH	=	0.163134	,
+C.IH	=	0.318543	,
+D.IH	=	-1.478138	,
+E.IH	=	-0.108396	,
+F.IH.LR	=	0.369081190549499	,
+S091.IH.LR =	-0.8967334604114255	,
+
+/* Export volume of other services (EXSOTH) */
+A.EXSOTH	=	2.991515	,
+Q1.EXSOTH	=	0.176263	,
+Q2.EXSOTH	=	0.471231	,
+Q3.EXSOTH	=	0.578429	,
+B.EXSOTH	=	-0.289863	,
+C.EXSOTH.LR	=	-0.663443	,
+
+/* Export volume of other goods (EXOTH) */
+A.EXOTH			=	6.214402	,
+Q1.EXOTH		=	-0.142887	,
+Q2.EXOTH		=	-0.174639	,
+Q3.EXOTH		=	-0.142702	,
+D041.EXOTH		=	0.308866	,
+S093.EXOTH		=	0.167998	,
+B.EXOTH			=	-1.170591	,
+C.EXOTH			=	-0.676996	,
+D.EXOTH.LR		=	-0.996434	,
+
+
+/* Import volume of services (IMPS) */	
+A.IMPS		=	-0.2930720794572347	,
+Q1.IMPS		=	0.01296082976304371	,
+Q2.IMPS		=	0.1483871727158833	,
+Q3.IMPS		=	0.1391098675877022	,
+B.IMPS		=	0.7251022430442781	,
+C.IMPS		=	-0.2945971560963718	,
+D.IMPS.LR	=	-0.3051101866293539	,
+E.IMPS.LR	=	0.8412438926751936	,
+
+/* Import volume of services (IMPOTH) */
+A.IMPOTH		=	-0.2121839145642512	,
+Q1.IMPOTH		=	-0.01752736276716166	,
+Q2.IMPOTH		=	0.1053775658054415	,
+Q3.IMPOTH		=	0.02370724726052658	,
+D084.IMPOTH		=	-0.3426133377421751	,
+B.IMPOTH		=	0.6787257011575635	,
+C.IMPOTH		=	0.1700364708815642	,
+D.IMPOTH		=	-0.5136762526808212	,
+E.IMPOTH.LR		=	-0.5950312174906395	,
+
+/* Potential output (GDPT) */		
+A.GDPT		=	-3.293435	,
+B.GDPT		=	0.6	,
+//T.GDPT	=	0.004126	,
+
+/* Wages (W) */
+A.W     =             1.163799          ,
+Q1.W    =             0.021196          ,
+Q2.W    =             0.010187          ,
+Q3.W    =             0.000417          ,
+B.W     =            -1.009572          ,
+C.W     =            -0.663839          ,
+D.W     =             0.058155          ,
+E.W     =            -0.346880          ,
+S0207.W =	      0.017499		,
+S9299.W =	     -0.012873		,
+
+/* Unemployment rate (UR) */
+Q1.UR	=	0.002362	,
+Q2.UR	=	0.011985	,
+Q3.UR	=	-0.016581	,
+A.UR	=	0.320296	,
+B.UR	=	-0.092990	,
+C.UR	=	-0.141161	,
+D.UR	=	-0.390259	,
+
+/* Participation rate (PA) */		
+Q1.PA	=	0.013671	,
+Q2.PA	=	0.050274	,
+Q3.PA	=	0.015967	,
+A.PA	=	0.203766	,
+B.PA	=	0.753201	,
+C.PA	=	0.029839	,
+D.PA	=	-0.071114	,
+
+/* Average working hours (AVH) */
+Q1.AVH   =	0.005299	,
+Q2.AVH   = 	0.063060	,
+Q3.AVH   = 	0.035116	,
+D054.AVH = 	-0.032463	,
+D084.AVH = 	-0.046095	,
+D971.AVH = 	-0.042142	,
+A.AVH	=	-0.168069	,
+B.AVH	=	0.088301	,
+
+/* Consumer price index (CPIUL) */
+A.CPIUL	=	0.654794	,
+B.CPIUL	=	0.179054	,
+C.CPIUL	=	0.068385	,
+D.CPIUL	=	0.080421	,
+E.CPIUL	=	0.081385	,
+
+/* Break-even inflation expectations (INFE) */
+A.INFE = 	0.85		,
+
+/* Import price of other goods deflator (PMOTH) */	
+A.PMOTH	=	-0.115683	,
+B.PMOTH	=	0.882957	,
+C.PMOTH	=	0.109381	,
+D.PMOTH	=	0.078884	,
+E.PMOTH	=	0.130581	,
+
+/* Import price deflator for aluminium production in USD (PMALU) */	
+A.PMALU	=	0.505207	,
+B.PMALU	=	0.374116	,
+
+/* Export service price deflator (PXS) */	
+A.PXS	=	0.7859159652671764	,
+D084.PXS=	-0.1004869184338225	,
+
+/* Price of marine products in foregn currency (PXMAR) */
+Q1.PXMAR=	-0.009396	,
+Q2.PXMAR=	-0.042659	,
+Q3.PXMAR=	-0.029662	,
+A.PXMAR	=	0.235296	,
+B.PXMAR	=	0.236035	,
+C.PXMAR	=	0.588194	,
+D0924.PXMAR=	0.073563	,
+
+/* Export price deflator of other goods (PXOTH) */	
+A.PXOTH =	-0.3360619632835514	,
+
+
+/* Private consumption deflator (PC) */	
+A.PC	=	0.1897472507036783	,
+B.PC	=	0.8957160846821071	,
+C.PC	=	0.04518914529554389	,
+D.PC	=	-0.08583332562999964,
+Q1.PC	=	0.001259068352740662	,
+Q2.PC	=	0.004289399149281537	,	
+Q3.PC	=	0.0005283178128039399	,
+
+/* Government consumption deflator (PG) */		
+A.PG	=	0.153356	,
+Q1.PG	=	0.023795	,
+Q2.PG	=	-0.016370	,
+Q3.PG	=	0.0000945	,
+D063.PG =	-0.035367	,
+D0834.PG =	0.019712	,
+
+/* Investment goods price deflator (PI) */
+Q1.PI	=	0.002656	,
+Q2.PI	=	-0.010653	,
+Q3.PI	=	-0.010231	,
+A.PI	=	-0.167342	,
+B.PI	=	0.259669	,
+C.PI	=	0.477821	,
+D.PI	=	0.335132	,
+
+/* Government investment price deflator (PIG) */
+A.PIG	=	-0.153537	,
+B.PIG	=	0.140880	,
+C.PIG	=	0.603233	,
+Q1.PIG	=	0.012361	,
+Q2.PIG	=	-0.001238	,
+Q3.PIG	=	-0.002624	,
+D0934.PIG =	0.037083	,
+
+
+/* House prices (PH) */	
+A.PH	=	 0.182132	,
+B.PH	=	 0.427940	,
+C.PH	=	-0.963312	,
+D.PH	=	-0.054068	,
+E.PH.LR	=	-1.468877	,
+F.PH.LR	=	-1.763101	,
+Q1.PH	=	 0.015257	,
+Q2.PH	=	 0.012259	,
+Q3.PH	=	 0.002929	,
+D051.PH	=	 0.055330	,
+
+/* Building costs (BC) */		
+A.BC		=	0.70	,
+B.BC		=	0.30	,
+
+/* Household interest rate income tax (TI) */	
+A.TI	=	0.00106		,
+B.TI	=	1.475501	,
+C.TI	=	-0.505489	,
+D.TI	=	0.000418	,
+E.TI	=	-0.014289	,
+Q1.TI	=	-0.0000822	,
+Q2.TI	=	-0.000596	,
+Q3.TI	=	-0.000189	,
+D073083.TI =	-0.001142	,
+
+
+/* Current grants to the household sector (CJ) */
+A.CJ	=	0.008734	,
+B.CJ	=	0.840059	,
+C.CJ	=	-0.028133	,
+Q1.CJ	=	0.000922	,
+Q2.CJ	=	-0.001555	,
+Q3.CJ	=	-0.001956	,
+D091.CJ	=	0.007901	,
+
+
+/* General government debt interest payments (DI) */
+A.DI	=	0.38	,
+B.DI	=	0.43	,
+C.DI	=	0.19	,
+
+/* Other household non-labour income (YDIJ)*/
+A.YDIJ	=	0.001	,
+Q1.YDIJ	=	-0.0000255	,
+Q2.YDIJ	=	0.001043	,
+Q3.YDIJ	=	0.0000223	,
+B.YDIJ	=	1.568316	,
+C.YDIJ	=	-0.675135	,
+D.YDIJ	=	-0.056271	,
+E.YDIJ	=	-0.013299	,
+F.YDIJ	=	-0.087521	,
+
+
+;			
